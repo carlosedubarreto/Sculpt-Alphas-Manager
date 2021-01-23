@@ -93,7 +93,7 @@ def preview_items_in_folders(self, context):
     if directory and os.path.exists(directory):
         image_paths = []
         for fn in os.listdir(directory):
-            if fn.lower().endswith(".jpeg") or fn.lower().endswith(".jpg") or fn.lower().endswith(".png") or fn.lower().endswith(".tif"):
+            if fn.lower().endswith(".jpeg") or fn.lower().endswith(".jpg") or fn.lower().endswith(".png") or fn.lower().endswith(".tif") or fn.lower().endswith(".psd"):
                 image_paths.append(fn)
 
         for i, name in enumerate(image_paths):
